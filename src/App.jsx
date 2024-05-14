@@ -8,6 +8,9 @@ import RandomPokemon from "./Pokemon/Pokemon";
 import Greeter from "./Props/1Greet";
 import Diess from "./Props/2Die";
 import Array from "./Props/3Array";
+import Condition from './Props/4Condition'
+import Heading from "./Props/5Heading";
+import ColorList from "./Props/6Array";
 
 function Dog(){
   return <p className="text-lg">Wow!! Bhai Mai Tho Sumn Don Hu....</p>
@@ -17,12 +20,25 @@ function Dog(){
 export default function App() {
   return (
     <>
+      {/* Rendering with array */}
+       <ColorList colors={["red" , "pink" , "purple" , "teal"]} ></ColorList>
+
+      {/* <Heading color ="magenta" text="welcome!!" fontSize="20px"> </Heading>
+      <Heading color ="teal" text="qwert!!" fontSize="48px"> </Heading> */}
+      {/* Conditional */}
+      {/* <Condition></Condition>
+      <Condition></Condition>
+      <Condition></Condition> */}
+
+
+
+
 
     {/* Propsss */}
 
-    <Array value={[1,2,3]}/>
+    {/* <Array value={[1,2,3]}/>
     <Array value={["a","b","c"]}/>
-    <Array value={{a:1 ,b:2}}/>  {/* object*/}
+    <Array value={{a:1 ,b:2}}/>  object */}
 
 
 
