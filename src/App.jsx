@@ -13,6 +13,10 @@ import Heading from "./Props/5Heading";
 import ColorList from "./Props/6Array";
 import Slot from "./Props/7Slot";
 import Shopping from "./ShoppingCart/Shopping";
+import PropertiesList from "./Properties/PropertiesList";
+import Clicked from "./React Event/Clicked";
+import Form from "./React Event/Form";
+import ClickMe from "./React Event/ClickMe";
 
 // function Dog() {
 //   return <p className="text-lg">Wow!! Bhai Mai Tho Sumn Don Hu....</p>;
@@ -25,33 +29,36 @@ const data = [
   { id: 4, item: "carrot", quantity: 6, completed: true },
 ];
 
+const properties = [
+  { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
+  { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
+  { id: 129032, name: "Cactus Retreat", rating: 4.75, price: 300 },
+  { id: 129033, name: "Redwood Treehouse Escape", rating: 4.9, price: 120 },
+  { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
+  { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
+];
+
 export default function App() {
   return (
     <>
+      {/* React Event */}
+
+      <ClickMe msg = "HEy:" buttontext ="Pls click me"/>
+      <ClickMe msg = "Stop it" buttontext ="Click"/>
+      {/* <Form/>
+      <Clicked/> */}
+
+
+
+      {/* Propeties */}
+      {/* <div>
+        <PropertiesList properties={properties} />
+      </div> */}
+
       {/* Shopping List Demo */}
-      
-      <Shopping items={data}/>
+
+      {/* <Shopping items={data} /> */}
       {/* <ShoppingList items={data} /> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* ---------------------------------------------------- */}
       {/* <Slot val1="A" val2="A" val3="A"></Slot>
